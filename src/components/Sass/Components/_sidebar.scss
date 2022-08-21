@@ -1,0 +1,166 @@
+.sidebar {
+  width: 500px;
+  border-right: 2px solid $secondary-color;
+}
+
+// User block style
+
+.user-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  padding: 20px 20px 30px;
+  background-color: $primary-color;
+  border-bottom: 2px solid $secondary-color;
+}
+
+.user-info-box {
+  display: flex;
+  align-items: center;
+}
+
+.user-wrapper__text {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.user-wrapper__btn {
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #1f62cf;
+  border-radius: 15px;
+  color: #fff;
+  margin-left: auto;
+}
+
+.user-wrapper__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.input-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.input-wrap__input {
+  width: 100%;
+  height: 30px;
+  padding: 10px 10px 10px 35px;
+  outline: none;
+  border: 1px solid $secondary-color;
+  border-radius: 15px;
+
+  &::placeholder {
+    color: $secondary-color;
+  }
+}
+
+// Contacts block style
+
+.contacts-wrap {
+  padding-top: 40px;
+}
+
+.contacts-wrap__title {
+  margin: 0 0 0 20px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #53bbd0;
+}
+
+.contacts-list {
+  margin-top: 40px;
+  height: 60vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.contacts-list__item {
+  padding-bottom: 10px;
+  border-bottom: 3px solid $secondary-color;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-list__item--new {
+  padding-bottom: 10px;
+  border-bottom: 3px solid $secondary-color;
+  background-color: #1f62cf;
+
+  &:hover {
+    background-color: #1f62cfCC;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contacts-list__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 30px 0 20px;
+}
+
+.text-box {
+  width: 200px;
+  height: 106px;
+  overflow: hidden;
+}
+
+.contacts-list__message {
+  margin: 0;
+  color: #989898;
+}
+
+.contacts-list__date {
+  font-size: 13px;
+  align-self: flex-start;
+  margin-left: 60px;
+  margin-top: 35px;
+}
+
+.contacts-list__date--new {
+  margin-left: 30px;
+}
+
+.contacts-list__item--new * {
+  color: #fff;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.counter-box__text {
+  color: #1f62cf;
+}
